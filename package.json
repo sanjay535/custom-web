@@ -1,5 +1,5 @@
 {
-  "name": "custom-web",
+  "name": "@sanjay535/custom-web",
   "version": "1.0.0",
   "description": "it's web components for speedup development, it builds on top of lit-element & lit-html",
   "main": "index.js",
