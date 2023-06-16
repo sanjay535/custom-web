@@ -1,6 +1,6 @@
 {
   "name": "@sanjay535/custom-web",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "it's web components for speedup development, it builds on top of lit-element & lit-html",
   "exports": {
     "./card": "./package/card/index.js"
@@ -27,7 +27,6 @@
   "author": "Sanjay Gautam",
   "license": "MIT",
   "dependencies": {
-    "lit": "^2.7.5",
     "lit-element": "^3.3.2",
     "lit-html": "^2.7.4"
   }
