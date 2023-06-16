@@ -1,6 +1,6 @@
 {
   "name": "@sanjay535/custom-web",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "it's web components for speedup development, it builds on top of lit-element & lit-html",
   "exports": {
     "./card": "./package/card/index.js"
