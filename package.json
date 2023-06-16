@@ -9,11 +9,22 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sanjay535/custom-web.git"
+  },
+  "homepage": "https://github.com/sanjay535/custom-web/blob/main/README.md",
   "keywords": [
     "lit-html",
     "lit-element",
     "web-component"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/sanjay535/custom-web/issues"
+  },
   "author": "Sanjay Gautam",
   "license": "MIT",
   "dependencies": {
