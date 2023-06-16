@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "it's web components for speedup development, it builds on top of lit-element & lit-html",
   "main": "index.js",
-  "exports":{
-    "./card":"./package/card/index.js"
+  "exports": {
+    "./card": "./package/card/index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -28,6 +28,7 @@
   "author": "Sanjay Gautam",
   "license": "MIT",
   "dependencies": {
+    "lit": "^2.7.5",
     "lit-element": "^3.3.2",
     "lit-html": "^2.7.4"
   }
