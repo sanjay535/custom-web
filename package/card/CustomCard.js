@@ -13,25 +13,27 @@ export class CustomCard extends LitElement {
     };
   }
   // Define scoped styles right with your component, in plain CSS
-  static styles = css`
-    :host {
-      color: ${this.color};
-      min-width: 567px;
-      min-height: auto;
-      background-color: #f2f2f2;
-    }
-    .card {
-      min-width: 567px;
-      min-height: auto;
-      background-color: #f2f2f2;
-    }
-    h1 {
-      text-align: center;
-    }
-    p {
-      color: ${this.color};
-    }
-  `;
+  static get styles() {
+    return css`
+      :host {
+        color: ${this.color};
+        min-width: 567px;
+        min-height: auto;
+        background-color: #f2f2f2;
+      }
+      .card {
+        min-width: 567px;
+        min-height: auto;
+        background-color: #f2f2f2;
+      }
+      h1 {
+        text-align: center;
+      }
+      p {
+        color: ${this.color};
+      }
+    `;
+  }
 
   constructor() {
     super();
