@@ -1,12 +1,12 @@
 {
   "name": "@sanjay535/custom-web",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "it's web components for speedup development, it builds on top of lit-element & lit-html",
   "type": "module",
   "main": "./package/card/index.js",
   "module": "./package/card/index.js",
   "exports": {
-    "./card": "./package/card/index.js"
+    ".": "./package/card/index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -1,4 +1,5 @@
-import { LitElement, css, html } from 'lit-element';
+import { LitElement, css, html, unsafeCSS, } from 'lit-element';
+import {styleMap} from 'lit-html/directives/style-map';
 
 /**
  * # <custom-card> webComponent
@@ -16,21 +17,21 @@ export class CustomCard extends LitElement {
   static get styles() {
     return css`
       :host {
-        color: ${this.color};
+        color: ${unsafeCSS(this.color)};
         min-width: 567px;
         min-height: auto;
-        background-color: #f2f2f2;
       }
       .card {
         min-width: 567px;
-        min-height: auto;
+        min-height: 100px;
+        max-height:auto;
         background-color: #f2f2f2;
       }
       h1 {
         text-align: center;
       }
       p {
-        color: ${this.color};
+        color: ${unsafeCSS(this.color)};
       }
     `;
   }
@@ -38,14 +39,18 @@ export class CustomCard extends LitElement {
   constructor() {
     super();
     // Declare reactive properties
+    
     this.heading = this.heading || 'Sanjay Gautam';
     this.content = this.content || 'He is Frontend Devloper @ING';
   }
 
   // Render the UI as a function of component state
   render() {
+    const styles = {
+        color: this.color,
+      };
     return html`
-      <div>
+      <div style=${styleMap(styles)} class="card">
         <h1>${this.heading}</h1>
         <p>${this.content}</p>
       </div>
