@@ -1,15 +1,15 @@
 {
   "name": "@sanjay535/custom-web",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "it's web components for speedup development, it builds on top of lit-element & lit-html",
   "type": "module",
-  "main": "./package/card/index.js",
-  "module": "./package/card/index.js",
+  "main": "./index.js",
+  "module": "./index.js",
   "exports": {
-    ".": "./package/card/index.js"
+    ".": "./index.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rimraf build && rollup -c"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,17 @@
   },
   "author": "Sanjay Gautam",
   "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/plugin-proposal-decorators": "^7.22.5",
+    "@rollup/plugin-commonjs": "^25.0.2",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "rimraf": "^3.0.2",
+    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-minify-html-literals": "^1.2.6",
+    "rollup-plugin-terser": "^7.0.2"
+  },
   "dependencies": {
     "lit-element": "^3.3.2",
     "lit-html": "^2.7.4"
