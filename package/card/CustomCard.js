@@ -1,5 +1,5 @@
 import { LitElement, css, html, unsafeCSS, } from 'lit-element';
-import { styleMap } from 'lit-html/directives/style-map.js';
+import { styleMap } from '../../directives';
 
 /**
  * # <custom-card> webComponent

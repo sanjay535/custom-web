@@ -1,12 +1,13 @@
 {
   "name": "@sanjay535/custom-web",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "it's web components for speedup development, it builds on top of lit-element & lit-html",
   "type": "module",
   "main": "./index.js",
   "module": "./index.js",
   "exports": {
-    ".": "./index.js"
+    ".": "./index.js",
+    "./directives":"./directives/index.js"
   },
   "scripts": {
     "build": "rimraf build && rollup -c"
