@@ -44,7 +44,12 @@ export class CustomCard extends ScopedElementsMixin(LitElement) {
   render() {
     return html`
       <div class="card">
-        <slot><default-card></default-card></slot>
+        <slot>
+        <default-card themeStyle="theme1"></default-card>
+        <default-card themeStyle="theme2"></default-card>
+        <default-card themeStyle="theme3"></default-card>
+        <default-card themeStyle="theme4"></default-card>
+        </slot>
         <slot name="header"></slot>
         <slot name="content"></slot>
         <slot name="footer"></slot>
