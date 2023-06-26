@@ -166,4 +166,45 @@ export const theme4 = {
   linkStyle: linkStyleTheme4,
 };
 
-export const themes = [theme1, theme2, theme3, theme4];
+const headerTheme5 = css`
+  padding: 4px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40px;
+  color: #fff;
+  background-color: hsl(270, 73%, 54%);
+  ${font24Style}
+`;
+const contentTheme5 = css`
+  background-color: hsl(270, 73%, 94%);
+  color: hsl(270, 73%, 54%);
+  min-height: 150px;
+  padding: 16px;
+  ${fontStyle}
+`;
+const footerTheme5 = css`
+  padding: 4px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40px;
+  background-color: hsl(270, 73%, 90%);
+  color: hsl(270, 73%, 54%);
+  ${font14Style}
+`;
+
+const linkStyleTheme5 = css`
+  text-decoration: none;
+  color: inherit;
+`;
+export const theme5 = {
+  id: 'theme5',
+  header: headerTheme5,
+  content: contentTheme5,
+  footer: footerTheme5,
+  iconColor: 'hsl(270, 73%, 54%)',
+  linkStyle: linkStyleTheme5,
+};
+
+export const themes = [theme1, theme2, theme3, theme4, theme5];
